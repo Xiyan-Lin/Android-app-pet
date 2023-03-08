@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/albumFragment"
+        tools:src="@drawable/ic_album_foreground"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/chatGPTFragment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="674dp"
+        tools:src="@drawable/chatGptLogo" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="143dp"
         android:visibility="visible"
         tools:src="@tools:sample/avatars"
         tools:visibility="visible" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/profileFragment"
+        android:layout_width="240dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/profile_pic"
+        android:layout_centerInParent="true"
+        android:text="@string/profile"
+        android:textSize="@dimen/_30sdp"
+        />
+
+    <Button
+        android:id="@+id/recordFragment"
+        android:layout_width="240dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/profileFragment"
+        android:layout_centerInParent="true"
+        android:text="@string/record"
+        android:textSize="@dimen/_30sdp" />
+
+    <Button
+        android:id="@+id/infoFragment"
+        android:layout_width="240dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/recordFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="242dp"
+        android:text="@string/info"
+        android:textSize="@dimen/_30sdp" />
+
+</RelativeLayout>

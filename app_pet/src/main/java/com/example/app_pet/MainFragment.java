@@ -24,31 +24,31 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.profileFragment).setOnClickListener(v -> {
+        view.findViewById(R.id.profile).setOnClickListener(v -> {
             NavController controller = Navigation.findNavController(v);
             Bundle bundle = new Bundle();
             controller.navigate(R.id.action_mainFragment_to_profileFragment);
         });
 
-        view.findViewById(R.id.recordFragment).setOnClickListener(v -> {
+        view.findViewById(R.id.record).setOnClickListener(v -> {
             NavController controller = Navigation.findNavController(v);
             Bundle bundle = new Bundle();
             controller.navigate(R.id.action_mainFragment_to_recordFragment);
         });
 
-        view.findViewById(R.id.infoFragment).setOnClickListener(v -> {
+        view.findViewById(R.id.info).setOnClickListener(v -> {
             NavController controller = Navigation.findNavController(v);
             Bundle bundle = new Bundle();
             controller.navigate(R.id.action_mainFragment_to_infoFragment);
         });
 
-        view.findViewById(R.id.albumFragment).setOnClickListener(v -> {
+        view.findViewById(R.id.album).setOnClickListener(v -> {
             NavController controller = Navigation.findNavController(v);
             Bundle bundle = new Bundle();
             controller.navigate(R.id.action_mainFragment_to_albumFragment);
         });
 
-        view.findViewById(R.id.chatGPTFragment).setOnClickListener(v -> {
+        view.findViewById(R.id.chatGPT).setOnClickListener(v -> {
             NavController controller = Navigation.findNavController(v);
             Bundle bundle = new Bundle();
             controller.navigate(R.id.action_mainFragment_to_chatGPTFragment);

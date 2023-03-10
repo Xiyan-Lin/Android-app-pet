@@ -4,61 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="336dp"
+        android:text="@string/edit" />
 
     <ImageView
         android:id="@+id/profile_pic"
         android:layout_width="415dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="80dp"
         android:visibility="visible"
         tools:src="@tools:sample/avatars"
         tools:visibility="visible" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sort"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_margin="15dp"
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_sort"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="種類"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_margin="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="寵物名字"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/height"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_margin="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_height"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="寵物身高"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

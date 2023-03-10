@@ -5,4 +5,15 @@
     <string name="profile">Profile</string>
     <string name="record">Record</string>
     <string name="info">Info</string>
+    <string name="edit">Edit</string>
+
+    <string-array name="pet_information">
+    <item>Sort</item>
+    <item>Name</item>
+    <item>Height</item>
+    <item>Weight</item>
+    <item>Length</item>
+    <item>Breed</item>
+    <item>Birthdate</item>
+    </string-array>
 </resources>

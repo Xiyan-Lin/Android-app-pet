@@ -27,7 +27,7 @@
             android:id="@+id/edit_sort"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="種類"/>
+            android:hint="種類 (EX.狗)"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
